@@ -1,23 +1,21 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-class ExploreScreen extends Component {
+class SearchScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Good Vibes Explore page</Text>
-        <Text> its awsome </Text>
+        <Text>This is Search Screen</Text>
       </View>
     );
   }
 }
-export default ExploreScreen;
+export default SearchScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#f3f6f3"
+    justifyContent: "center"
   }
 });
