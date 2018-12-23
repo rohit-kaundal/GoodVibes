@@ -69,7 +69,7 @@ const ExploreStack = createStackNavigator({
 
 // Explore screen stack navigation options
 ExploreStack.navigationOptions = {
-  header: { visible: false },
+  header: null,
   tabBarLabel: "Explore",
   tabBarIcon: ({ focused }) => {
     return (
@@ -93,6 +93,7 @@ export default createBottomTabNavigator(
     MyVibeStack
   },
   {
+    headerMode: "none",
     activeColor: "#00c853",
     inactiveColor: "#666"
   }

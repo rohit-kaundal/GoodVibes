@@ -17,10 +17,10 @@ class PopularStrains extends Component {
             flex: 1,
             fontSize: 16,
             paddingLeft: 20,
-            paddingTop: 30,
+            paddingTop: 50,
             color: "#fff",
             alignItems: "flex-start",
-            height: 116,
+            height: 129,
             backgroundColor: "#b0b0b0"
           }}
         >
