@@ -9,6 +9,22 @@ import TabBarIcon from "../components/TabBarIcon";
 
 import SettingsScreen from "../screens/SettingsScreen";
 import ExploreScreen from "../screens/ExploreScreen";
+import MyVibesScreen from "../screens/MyVibesScreen";
+
+const MyVibeStack = createStackNavigator({
+  MyVibes: MyVibesScreen
+});
+
+MyVibeStack.navigationOptions = {
+  tabBarLabel: "My Vibes",
+  tabBarIcon: ({ focused }) => {
+    <Image
+      source = {require('../assets/images/1x/top_profile.png')}
+      height=24
+      width=24
+      />
+  }
+};
 
 const ExploreStack = createStackNavigator({
   Explore: ExploreScreen
