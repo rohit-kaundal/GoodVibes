@@ -8,7 +8,8 @@ import {
   TouchableOpacity
 } from "react-native";
 import { FloatingAction } from "react-native-floating-action";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+//import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import Icon from "../components/SvgIcon";
 
 import PopularStrains from "../components/PopularStrains";
 import NeedHelp from "../components/NeedHelp";
@@ -70,7 +71,13 @@ class ExploreScreen extends Component {
               borderRadius: 100
             }}
           >
-            <Icon name="plus" size={30} color="#fff" />
+            <Icon
+              name="FabIcon"
+              height={24}
+              width={24}
+              viewBox={"0 0 24 24"}
+              fill="#f3e9e9"
+            />
           </TouchableOpacity>
         </View>
       </ScrollView>
