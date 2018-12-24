@@ -14,20 +14,22 @@ class StrainSummary extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          source={{
-            uri:
-              "https://leafly-s3.s3.amazonaws.com/leafly/reviews/blue-dream_100x100_189e.jpg"
-          }}
-          style={{
-            marginTop: 30,
-            height: 75,
-            width: 75,
-            borderRadius: 75,
-            alignSelf: "center",
-            zIndex: 10
-          }}
-        />
+        <View style={{ flex: 1, elevation: 2 }}>
+          <Image
+            source={{
+              uri:
+                "https://leafly-s3.s3.amazonaws.com/leafly/reviews/blue-dream_100x100_189e.jpg"
+            }}
+            style={{
+              marginTop: 30,
+              height: 75,
+              width: 75,
+              borderRadius: 75,
+              alignSelf: "center"
+            }}
+          />
+        </View>
+
         <View
           style={{
             flex: 1,
@@ -37,10 +39,15 @@ class StrainSummary extends Component {
             marginLeft: 20,
             marginRight: 20,
             backgroundColor: "#fff",
-            borderColor: "#33000000",
-            borderBottomWidth: 40,
+            paddingBottom: 40,
             paddingLeft: 20,
-            paddingRight: 20
+            paddingRight: 20,
+            shadowColor: "#330000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.8,
+            shadowRadius: 2,
+            elevation: 1,
+            zIndex: 100
           }}
         >
           <View

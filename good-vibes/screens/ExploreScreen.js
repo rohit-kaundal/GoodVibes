@@ -6,6 +6,7 @@ import NeedHelp from "../components/NeedHelp";
 import StrainSummary from "../components/StrainSummary";
 import PopularProducts from "../components/PopularProducts";
 import MedicalUse from "../components/MedicalUse";
+import GoodVibesSearch from "../components/GoodVibesSearch";
 
 class ExploreScreen extends Component {
   static navigationOptions = {
@@ -19,6 +20,14 @@ class ExploreScreen extends Component {
         <NeedHelp />
         <StrainSummary />
         <MedicalUse />
+        <GoodVibesSearch
+          title="Looking for something else?"
+          desc="Find it with GoodVibes Search"
+          buttonTitle="Show me"
+        />
+        <View style={{ flex: 1, marginTop: 10 }}>
+          <Text>Sepearetr</Text>
+        </View>
       </ScrollView>
     );
   }

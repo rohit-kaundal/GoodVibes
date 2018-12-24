@@ -13,8 +13,8 @@ class OutlineButton extends Component {
           underlayColor="white"
           style={{
             borderColor: "#b0b0b0",
-            borderRadius: 35,
-            borderWidth: 1,
+            borderRadius: this.props.borderless ? 0 : 35,
+            borderWidth: this.props.borderless ? 0 : 1,
             width: 90,
             height: 35,
             padding: 5

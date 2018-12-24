@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 23,
     paddingLeft: 30,
-    paddingRight: 30
+    paddingRight: 30,
+    shadowColor: "#330000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 1
   }
 });

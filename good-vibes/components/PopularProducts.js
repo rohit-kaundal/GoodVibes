@@ -13,8 +13,11 @@ class PopularProducts extends Component {
             borderColor: "#33000000",
             backgroundColor: "#fff",
             paddingBottom: 10,
-            borderBottomColor: "#33000000",
-            borderBottomWidth: 2
+            shadowColor: "#330000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.8,
+            shadowRadius: 2,
+            elevation: 1
           }
         ]}
       >
