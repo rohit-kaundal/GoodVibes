@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  TouchableOpacity
+} from "react-native";
+import { FloatingAction } from "react-native-floating-action";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import PopularStrains from "../components/PopularStrains";
 import NeedHelp from "../components/NeedHelp";
@@ -8,7 +17,26 @@ import PopularProducts from "../components/PopularProducts";
 import MedicalUse from "../components/MedicalUse";
 import GoodVibesSearch from "../components/GoodVibesSearch";
 
+const fabActions = [
+  {
+    text: "Action 1",
+    icon: require("../assets/images/1x/write_edit.png"),
+    name: "bt_action1",
+    position: 1
+  },
+  {
+    text: "Action 2",
+    icon: require("../assets/images/1x/show_details.png"),
+    name: "bt_action2",
+    position: 2
+  }
+];
+
 class ExploreScreen extends Component {
+  constructor() {
+    super();
+    //this.floatingAction.animateButton();
+  }
   static navigationOptions = {
     header: null
   };
@@ -25,7 +53,26 @@ class ExploreScreen extends Component {
           desc="Find it with GoodVibes Search"
           buttonTitle="Show me"
         />
-        <View style={{ flex: 1, marginTop: 10 }} />
+        <View style={{ flex: 1, marginTop: 110, elevation: 1 }}>
+          <TouchableOpacity
+            onPress={() => alert("Fab button pressed")}
+            style={{
+              borderWidth: 1,
+              borderColor: "rgba(0,0,0,0.2)",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 60,
+              position: "absolute",
+              bottom: 19,
+              right: 19,
+              height: 60,
+              backgroundColor: "#00c853",
+              borderRadius: 100
+            }}
+          >
+            <Icon name="plus" size={30} color="#fff" />
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     );
   }
