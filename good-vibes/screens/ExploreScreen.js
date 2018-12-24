@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 import PopularStrains from "../components/PopularStrains";
 import NeedHelp from "../components/NeedHelp";
 import StrainSummary from "../components/StrainSummary";
+import PopularProducts from "../components/PopularProducts";
 
 class ExploreScreen extends Component {
   static navigationOptions = {
@@ -13,7 +14,7 @@ class ExploreScreen extends Component {
     return (
       <ScrollView style={{ flex: 1, backgroundColor: "#f3f6f3" }}>
         <PopularStrains />
-        <PopularStrains style={{ marginTop: 20 }} />
+        <PopularProducts style={{ marginTop: 20 }} />
         <NeedHelp />
         <StrainSummary />
       </ScrollView>
