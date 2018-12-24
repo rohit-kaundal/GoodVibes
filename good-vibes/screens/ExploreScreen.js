@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 
 import PopularStrains from "../components/PopularStrains";
 import NeedHelp from "../components/NeedHelp";
+import StrainSummary from "../components/StrainSummary";
+
 class ExploreScreen extends Component {
   static navigationOptions = {
     header: null
@@ -13,6 +15,7 @@ class ExploreScreen extends Component {
         <PopularStrains />
         <PopularStrains style={{ marginTop: 20 }} />
         <NeedHelp />
+        <StrainSummary />
       </ScrollView>
     );
   }
