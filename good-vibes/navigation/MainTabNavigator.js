@@ -6,6 +6,7 @@ import {
 } from "react-navigation";
 
 import TabBarIcon from "../components/TabBarIcon";
+import Icon from "../components/SvgIcon";
 
 /**
  * Import our screens
@@ -27,12 +28,7 @@ const SearchStack = createStackNavigator({
 SearchStack.navigationOptions = {
   tabBarLabel: "Search",
   tabBarIcon: ({ focused }) => {
-    return (
-      <Image
-        source={require("../assets/images/1x/nav_explore.png")}
-        style={{ height: 24, width: 24, resizeMode: "contain" }}
-      />
-    );
+    return <Icon name="SearchIcon" height="24" width="24" />;
   },
   tabBarOptions: {
     activeTintColor: "#00c853",
