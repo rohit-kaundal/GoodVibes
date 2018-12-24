@@ -5,6 +5,7 @@ import PopularStrains from "../components/PopularStrains";
 import NeedHelp from "../components/NeedHelp";
 import StrainSummary from "../components/StrainSummary";
 import PopularProducts from "../components/PopularProducts";
+import MedicalUse from "../components/MedicalUse";
 
 class ExploreScreen extends Component {
   static navigationOptions = {
@@ -12,11 +13,12 @@ class ExploreScreen extends Component {
   };
   render() {
     return (
-      <ScrollView style={{ flex: 1, backgroundColor: "#f3f6f3" }}>
+      <ScrollView style={{ flex: 1, backgroundColor: "#f3f6f3", width: 360 }}>
         <PopularStrains />
         <PopularProducts style={{ marginTop: 20 }} />
         <NeedHelp />
         <StrainSummary />
+        <MedicalUse />
       </ScrollView>
     );
   }

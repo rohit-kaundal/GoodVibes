@@ -39,13 +39,15 @@ class StrainSummary extends Component {
             backgroundColor: "#fff",
             borderColor: "#33000000",
             borderBottomWidth: 40,
-            padding: 20
+            paddingLeft: 20,
+            paddingRight: 20
           }}
         >
           <View
             style={{
               flex: 1,
-              margin: 20,
+              marginLeft: 20,
+              marginRight: 20,
               marginTop: 40
             }}
           >
