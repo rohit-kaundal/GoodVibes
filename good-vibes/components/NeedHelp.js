@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
+import OutlineButton from "../components/OutlineButton";
 
 class NeedHelp extends Component {
   render() {
@@ -11,30 +12,17 @@ class NeedHelp extends Component {
         <Text style={{ fontSize: 14, color: "#212121", marginTop: 10 }}>
           I want to feel
         </Text>
-        <View style={{ flexDirection: "row", flex: 1, alignItems: "center" }}>
-          <Button
-            title="Energised"
-            buttonStyle={{
-              backgroundColor: "transparent",
-              width: 90,
-              height: 35,
-              borderColor: "#b0b0b0",
-              borderWidth: 0,
-              borderRadius: 5
-            }}
-            titleStyle={{
-              fontSize: 14,
-              color: "#00c853"
-            }}
-          />
-
-          <Button
-            title="Relaxed"
-            outline={true}
-            fontSize={14}
-            color="#00c853"
-            rounded={true}
-          />
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            alignContent: "space-between",
+            marginTop: 10,
+            width: 210
+          }}
+        >
+          <OutlineButton title="Energized" onPress={() => alert("energised")} />
+          <OutlineButton title="Relaxed" onPress={() => alert("relaxed")} />
         </View>
       </View>
     );
@@ -51,6 +39,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderColor: "#33000000",
-    borderWidth: 1
+    borderWidth: 1,
+    paddingBottom: 20
   }
 });

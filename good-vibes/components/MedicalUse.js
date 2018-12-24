@@ -19,9 +19,12 @@ class MedicalUse extends Component {
             marginTop: 10
           }}
         >
-          <OutlineButton title="Depression" onPress={this._onPressTest} />
-          <OutlineButton title="Stress" />
-          <OutlineButton title="Fatigue" />
+          <OutlineButton
+            title="Depression"
+            onPress={() => alert("depression")}
+          />
+          <OutlineButton title="Stress" onPress={() => alert("stress")} />
+          <OutlineButton title="Fatigue" onPress={() => alert("fatigue")} />
         </View>
         <View
           style={{
@@ -31,9 +34,9 @@ class MedicalUse extends Component {
             marginTop: 10
           }}
         >
-          <OutlineButton title="Pain" onPress={this._onPressTest} />
-          <OutlineButton title="Headache" />
-          <OutlineButton title="Appetite" />
+          <OutlineButton title="Pain" onPress={() => alert("pain")} />
+          <OutlineButton title="Headache" onPress={() => alert("headache")} />
+          <OutlineButton title="Appetite" onPress={() => alert("appetite")} />
         </View>
       </View>
     );
