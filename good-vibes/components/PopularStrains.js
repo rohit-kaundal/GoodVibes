@@ -9,7 +9,14 @@ class PopularStrains extends Component {
       <View
         style={[
           this.props.style,
-          { flex: 1, borderColor: "#33000000", backgroundColor: "#fff" }
+          {
+            flex: 1,
+            borderColor: "#33000000",
+            backgroundColor: "#fff",
+            paddingBottom: 10,
+            borderBottomColor: "#33000000",
+            borderBottomWidth: 5
+          }
         ]}
       >
         <Text
@@ -20,7 +27,7 @@ class PopularStrains extends Component {
             paddingTop: 50,
             color: "#fff",
             alignItems: "flex-start",
-            height: 129,
+            height: 145,
             backgroundColor: "#b0b0b0"
           }}
         >
