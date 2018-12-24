@@ -25,9 +25,7 @@ class ExploreScreen extends Component {
           desc="Find it with GoodVibes Search"
           buttonTitle="Show me"
         />
-        <View style={{ flex: 1, marginTop: 10 }}>
-          <Text>Sepearetr</Text>
-        </View>
+        <View style={{ flex: 1, marginTop: 10 }} />
       </ScrollView>
     );
   }
