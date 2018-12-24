@@ -28,7 +28,27 @@ const SearchStack = createStackNavigator({
 SearchStack.navigationOptions = {
   tabBarLabel: "Search",
   tabBarIcon: ({ focused }) => {
-    return <Icon name="SearchIcon" height="24" width="24" />;
+    if (focused) {
+      return (
+        <Icon
+          name="SearchIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#00c853"
+        />
+      );
+    } else {
+      return (
+        <Icon
+          name="SearchIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#666"
+        />
+      );
+    }
   },
   tabBarOptions: {
     activeTintColor: "#00c853",
@@ -45,12 +65,27 @@ const MyVibeStack = createStackNavigator({
 MyVibeStack.navigationOptions = {
   tabBarLabel: "My Vibes",
   tabBarIcon: ({ focused }) => {
-    return (
-      <Image
-        source={require("../assets/images/1x/top_profile.png")}
-        style={{ height: 24, width: 24, resizeMode: "contain" }}
-      />
-    );
+    if (focused) {
+      return (
+        <Icon
+          name="MyVibesIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#00c853"
+        />
+      );
+    } else {
+      return (
+        <Icon
+          name="MyVibesIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#666"
+        />
+      );
+    }
   },
   tabBarOptions: {
     activeTintColor: "#00c853",
@@ -68,12 +103,27 @@ ExploreStack.navigationOptions = {
   header: null,
   tabBarLabel: "Explore",
   tabBarIcon: ({ focused }) => {
-    return (
-      <Image
-        source={require("../assets/images/1x/nav_products.png")}
-        style={{ height: 24, width: 24, resizeMode: "contain" }}
-      />
-    );
+    if (focused) {
+      return (
+        <Icon
+          name="ExploreIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#00c853"
+        />
+      );
+    } else {
+      return (
+        <Icon
+          name="ExploreIcon"
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+          fill="#666"
+        />
+      );
+    }
   },
   tabBarOptions: {
     activeTintColor: "#00c853",
