@@ -7,7 +7,11 @@ import {
   Image,
   TouchableOpacity
 } from "react-native";
-import { FloatingAction } from "react-native-floating-action";
+
+// Import search bar from compponents
+import { SearchBar } from "react-native-elements";
+
+//import { FloatingAction } from "react-native-floating-action";
 //import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icon from "../components/SvgIcon";
 
@@ -38,9 +42,25 @@ class ExploreScreen extends Component {
     super();
     //this.floatingAction.animateButton();
   }
+
+  onSearchChange = () => {
+    return null;
+  };
+
+  onSearchClear = () => {
+    return null;
+  };
+
   static navigationOptions = {
+    headerTitle: (
+      <SearchBar
+        onChangeText={onSearchChange}
+        onClear={onSearchClear}
+        placeholder="Search Waven"
+      />
+    ),
     headerStyle: {
-      backgroundColor:"#ff5a5f"
+      backgroundColor: "#ff5a5f"
     }
   };
   render() {
@@ -56,7 +76,6 @@ class ExploreScreen extends Component {
           desc="Find it with GoodVibes Search"
           buttonTitle="Show me"
         />
-       
       </ScrollView>
     );
   }
